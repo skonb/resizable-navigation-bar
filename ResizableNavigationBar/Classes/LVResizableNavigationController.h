@@ -22,6 +22,8 @@
 
 @interface LVResizableNavigationController : UINavigationController
 
+- (void)resetNavigationDelegate;
+
 @end
 
 @protocol LVResizableNavigationBarController
