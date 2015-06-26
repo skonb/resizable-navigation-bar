@@ -10,6 +10,8 @@ This project was inspired by Level Money's shift to large navigation headers in 
 
 Replace UINavigationController with LVResizableNavigationController.  Then, in any UIViewController that needs to modify the navigation height, implement the protocol LVResizableNavigationBarController.
 
+** If you are using a storyboard, you will also need to change the navigation bar class to LVResizableNavigationBar.
+
 The code was written in such a way that using LVResizableNavigationController without implementing the LVResizableNavigationBarController protocol will not cause any problems.
 
 ```
