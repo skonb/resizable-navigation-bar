@@ -150,6 +150,11 @@
   fromVC.title = nil;
   fromVC.navigationItem.leftBarButtonItems = nil;
   fromVC.navigationItem.rightBarButtonItems = nil;
+    
+    BOOL fromVCHidesBackButton = fromVC.navigationItem.hidesBackButton;
+    fromVC.navigationItem.hidesBackButton = YES;
+    BOOL toVCHidesBackButton = toVC.navigationItem.hidesBackButton;
+    toVC.navigationItem.hidesBackButton = YES;
   
   [UIView animateWithDuration:LVAnimationDuration
                         delay:0.0
@@ -173,6 +178,8 @@
                      toVC.navigationItem.rightBarButtonItems = rightItems;
                      fromVC.navigationItem.leftBarButtonItems = fromLeftItems;
                      fromVC.navigationItem.rightBarButtonItems = fromRightItems;
+                       fromVC.navigationItem.hidesBackButton = fromVCHidesBackButton;
+                       toVC.navigationItem.hidesBackButton = toVCHidesBackButton;
                      toVC.title = toTitle;
                      fromVC.title = fromTitle;
                      [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
