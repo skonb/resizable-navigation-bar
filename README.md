@@ -4,7 +4,6 @@ Open source implementation of resizable navigation bars in iOS
 This project was inspired by Level Money's shift to large navigation headers in iOS and Apple's inability to correctly support this functionality. We were unable to find any implementation, although much of the original research and inspiration behind this project came from edmentec (http://www.emdentec.com/blog/2014/2/25/hacking-uinavigationbar)
 
 ![alt tag](https://github.com/Levelmoney/resizable-navigation-bar/blob/master/gifs/resizable_header_fast_small.gif)
-![alt tag](https://github.com/Levelmoney/resizable-navigation-bar/blob/master/gifs/resizable_header_slow.gif)
 
 ### How to Use
 
