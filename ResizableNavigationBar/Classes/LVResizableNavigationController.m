@@ -99,6 +99,10 @@
   [self.animationObject updateNavigationBarForViewController:viewController];
 }
 
+- (void)updateNavigationBarForViewController:(UIViewController*)viewController{
+   [self.animationObject updateNavigationBarForViewController:viewController];
+}
+
 
 
 

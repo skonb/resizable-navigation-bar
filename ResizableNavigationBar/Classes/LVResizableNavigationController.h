@@ -23,7 +23,7 @@
 @interface LVResizableNavigationController : UINavigationController
 
 - (void)resetNavigationDelegate;
-
+- (void)updateNavigationBarForViewController:(UIViewController*)viewController;
 @end
 
 @protocol LVResizableNavigationBarController
@@ -32,5 +32,6 @@
 - (UIView *)resizableNavigationBarControllerSubHeaderView;
 - (CGFloat)resizableNavigationBarControllerNavigationBarHeight;
 - (UIColor *)resizableNavigationBarControllerNavigationBarTintColor;
+
 
 @end
